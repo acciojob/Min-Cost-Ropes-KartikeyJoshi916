@@ -4,7 +4,7 @@ function mincost(arr)
 		return 0;
 	}
 	let totalcost=0;
-	const heap=[...arr]; // copy the array to the heap
+	let heap=[...arr]; // copy the array to the heap
 	heap.sort((a, b) => a - b); // to make the heap in the ascending order
 	while(heap.length > 1){
 		const first=heap.shift;
